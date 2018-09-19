@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DS:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DS_jar</output-path>
+    <root id="archive" name="DS.jar">
+      <element id="module-output" name="DS" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/poi-3.17/poi-ooxml-schemas-3.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/poi-3.17/ooxml-lib/xmlbeans-2.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/poi-3.17/poi-3.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/poi-3.17/poi-ooxml-3.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/poi-3.17/poi-excelant-3.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/commons-io-2.6/commons-io-2.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/poi-3.17/lib/commons-collections4-4.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

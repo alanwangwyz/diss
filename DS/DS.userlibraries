@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="poi-ooxml-3.17">
+    <archive path="/Users/wangyizhou/Downloads/poi-3.17/poi-ooxml-3.17.jar" />
+  </library>
+  <library name="poi-ooxml-schemas-3.17">
+    <archive path="/Users/wangyizhou/Downloads/poi-3.17/poi-ooxml-schemas-3.17.jar" />
+  </library>
+  <library name="poi-excelant-3.17">
+    <archive path="/Users/wangyizhou/Downloads/poi-3.17/poi-excelant-3.17.jar" />
+  </library>
+  <library name="poi-examples-3.17">
+    <archive path="/Users/wangyizhou/Downloads/poi-3.17/poi-examples-3.17.jar" />
+  </library>
+  <library name="xmlbeans-2.6.0">
+    <archive path="/Users/wangyizhou/Downloads/poi-3.17/ooxml-lib/xmlbeans-2.6.0.jar" />
+  </library>
+  <library name="commons-collections4-4.1">
+    <archive path="/Users/wangyizhou/Downloads/poi-3.17/lib/commons-collections4-4.1.jar" />
+  </library>
+</eclipse-userlibraries>
+
