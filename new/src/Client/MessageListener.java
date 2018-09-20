@@ -7,25 +7,25 @@ import java.io.BufferedReader;
 import java.net.SocketException;
 import javafx.scene.control.TextArea;
 
-                        public class MessageListener extends Thread {
+public class MessageListener extends Thread {
 
-                            private BufferedReader reader;
-                            private TextArea msg;
+    private BufferedReader reader;
+    private TextArea msg;
 
-                            public MessageListener(BufferedReader reader, TextArea msg) {
-                                this.reader = reader;
-                                this.msg = msg;
-                            }
+    public MessageListener(BufferedReader reader, TextArea msg) {
+        this.reader = reader;
+        this.msg = msg;
+        }
 
-                            @Override
-                            public void run() {
+        @Override
+        public void run() {
 
-                                try {
-                                    String line;
-                                    while((line = reader.readLine()) != null) {
-                                        line = line.replaceAll("#","\n");
-                                        msg.setText(line);
-                                    }
+        try {
+            String line;
+            while((line = reader.readLine()) != null) {
+                line = line.replaceAll("#","\n");
+                msg.setText(line);
+            }
 
         } catch (SocketException e) {
             msg.setText("Socket closed! Please restart it later");

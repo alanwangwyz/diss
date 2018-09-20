@@ -28,7 +28,7 @@ public class GUI extends Application {
     @Override
     public void start(Stage primaryStage) {
 
-        primaryStage.setTitle("Dictionary Login");
+        primaryStage.setTitle("Game Login");
 
         GridPane gridPane = createRegistrationFormPane();
         Label nameLabel = new Label("Hostname: ");
@@ -46,6 +46,14 @@ public class GUI extends Application {
         passwordField.setPrefHeight(30);
         gridPane.add(passwordField, 1, 2);
 
+        Label usernameLabel = new Label("Username: ");
+        gridPane.add(usernameLabel, 0, 3);
+
+        TextField usernameField = new TextField();
+        usernameField.setPrefHeight(30);
+        gridPane.add(usernameField, 1, 3);
+
+
         Button loginButton = new Button("Login");
         loginButton.setPrefHeight(30);
         loginButton.setDefaultButton(true);
@@ -53,7 +61,7 @@ public class GUI extends Application {
         gridPane.add(loginButton, 0, 4, 2, 1);
         GridPane.setHalignment(loginButton, HPos.CENTER);
         GridPane.setMargin(loginButton, new Insets(20, 0,20,0));
-        Label headerLabel = new Label("Welcome to online dictionary");
+        Label headerLabel = new Label("Welcome to Scrabble!");
         headerLabel.setFont(Font.font("Arial", FontWeight.BOLD, 20));
         gridPane.add(headerLabel, 0,0,2,1);
         GridPane.setHalignment(headerLabel, HPos.CENTER);
@@ -65,8 +73,8 @@ public class GUI extends Application {
         primaryStage.show();
 
         loginButton.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
+                @Override
+                public void handle(ActionEvent event) {
                 if(nameField.getText().isEmpty()) {
                     showAlert(Alert.AlertType.ERROR, gridPane.getScene().getWindow(), "Form Error!", "Please enter your hostname");
                     return;
@@ -80,8 +88,9 @@ public class GUI extends Application {
                     String hostname = nameField.getText().trim();
                     int portnnumber = Integer.valueOf(passwordField.getText().trim());
                     Socket socket = new Socket(hostname, portnnumber);
+                    String username = usernameField.getText().trim();
                     primaryStage.close();
-                    new ClientGUI(socket).clientGUI();
+                    new ClientGUI(socket,username).clientGUI();
                 }catch (UnknownHostException e)
                 {
                     showAlert(Alert.AlertType.ERROR, gridPane.getScene().getWindow(), "Host Name Error!", "Please enter the host name again");

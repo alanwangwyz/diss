@@ -38,7 +38,7 @@ public class ClientConnection extends Thread {
     public void run() {
 
         try {
-            Dictionary word =new Dictionary();
+//            Dictionary word =new Dictionary();
             process.appendText(Thread.currentThread().getName()
                     + " - Reading messages from client's " + clientNum + " connection"+"\n");
 
@@ -48,7 +48,7 @@ public class ClientConnection extends Thread {
                 {
                     process.appendText(Thread.currentThread().getName()
                             + " - Message from client " + clientNum + " received: " + clientMsg+"\n");
-                    operation(clientMsg,word);
+//                    operation(clientMsg,word);
                 }
                 else if(clientMsg.equals("EXIT"))
                 {
@@ -68,33 +68,33 @@ public class ClientConnection extends Thread {
             e.printStackTrace();
         }
     }
-    public synchronized void operation (String clientMsg,Dictionary word)
-    {
-        int i = clientMsg.indexOf("\t");
-        String operation = clientMsg.substring(0, i);
-//                System.out.println(operation);
-        String rest = clientMsg.substring(i+1);
-//                System.out.println(rest);
-        if (operation.equalsIgnoreCase("QUERY"))
-        {
-            String dictionary = word.lookup(rest).replaceAll("\n","#");
-            write(dictionary, process);
-        }
-        else if(operation.equalsIgnoreCase("ADD"))
-        {
-            String key =rest.substring(0,rest.indexOf(" "));
-            String value =rest.substring(rest.indexOf(" ")+1);
-            if (value.equals(""))
-            {
-                write("Please enter the value!",process);
-            }
-            write(word.add(key,value),process);
-        }
-        else if(operation.equalsIgnoreCase("REMOVE"))
-        {
-            write(word.remove(rest),process);
-        }
-    }
+//    public synchronized void operation (String clientMsg,Dictionary word)
+//    {
+//        int i = clientMsg.indexOf("\t");
+//        String operation = clientMsg.substring(0, i);
+////                System.out.println(operation);
+//        String rest = clientMsg.substring(i+1);
+////                System.out.println(rest);
+//        if (operation.equalsIgnoreCase("QUERY"))
+//        {
+//            String dictionary = word.lookup(rest).replaceAll("\n","#");
+//            write(dictionary, process);
+//        }
+//        else if(operation.equalsIgnoreCase("ADD"))
+//        {
+//            String key =rest.substring(0,rest.indexOf(" "));
+//            String value =rest.substring(rest.indexOf(" ")+1);
+//            if (value.equals(""))
+//            {
+//                write("Please enter the value!",process);
+//            }
+//            write(word.add(key,value),process);
+//        }
+//        else if(operation.equalsIgnoreCase("REMOVE"))
+//        {
+//            write(word.remove(rest),process);
+//        }
+//    }
 
     //Needs to be synchronized because multiple threads can me invoking this method at the same
     //time
