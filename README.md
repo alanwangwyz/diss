@@ -6,7 +6,7 @@
 ![image](https://github.com/alanwangwyz/scrable-game/blob/master/image/Scrabble-Logo-Small.jpg)
 
 ## Model ##
-🔑`Client-Server`pattern
+🔑`Clients-to-Server`pattern
 
 ## Communication Protocols ##
 📺`TCP` to transfer the message between server and client
