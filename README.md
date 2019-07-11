@@ -5,25 +5,27 @@
 
 ![image](https://github.com/alanwangwyz/scrable-game/blob/master/image/Scrabble-Logo-Small.jpg)
 
-## Communication Protocols ##
-📺`TCP` 
+## Model ##
+🔑`Client-Server`pattern
 
-📺`Connection-oriented`
+## Communication Protocols ##
+📺`TCP` to transfer the message between server and client
+
+📺`Connection-oriented`more reliable
 
 📺`Flow Control`
 
-📺`Json`
+📺`Json`format to enhance the transfer rate
 
 ## GUI ##
-💡`javaFX`
+💡`javaFX` UI design
 
 💡`mouse control` 
 
-💡`highlight`
+💡`highlight`and `control` design
 
 💡`website` https://openjfx.io/
 
 ## Failure Exception ##
 ⚙ `Heartbeat packet` to avoid offline server
 
-⚙⚙🔑🔑🔑🔐🔐🔐📄📄📄✅✅✅
