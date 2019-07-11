@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="commons-beanutils-1.8.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Project_2 2/Project_2 2.zip_expanded copy/Project_2 2/commons-beanutils-1.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Project_2 2/Project_2 2.zip_expanded copy/Project_2 2/commons-collections-3.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Project_2 2/Project_2 2.zip_expanded copy/Project_2 2/commons-httpclient-3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Project_2 2/Project_2 2.zip_expanded copy/Project_2 2/commons-lang-2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Project_2 2/Project_2 2.zip_expanded copy/Project_2 2/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Project_2 2/Project_2 2.zip_expanded copy/Project_2 2/ezmorph-1.0.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Project_2 2/Project_2 2.zip_expanded copy/Project_2 2/json-lib-2.3-jdk15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Project_2 2/Project_2 2.zip_expanded copy/Project_2 2/json-simple-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Project_2 2/Project_2 2.zip_expanded copy/Project_2 2/jsonplugin-0.30.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
