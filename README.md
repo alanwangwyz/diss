@@ -1,2 +1,2 @@
-# Scrable game
+# Scrable-game
 
